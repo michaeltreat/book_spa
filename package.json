@@ -1,0 +1,25 @@
+{
+  "name": "book_spa",
+  "version": "1.0.0",
+  "description": "SPA book app",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeltreat/book_spa.git"
+  },
+  "author": "mike Treat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaeltreat/book_spa/issues"
+  },
+  "homepage": "https://github.com/michaeltreat/book_spa#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "pg": "^7.4.0"
+  }
+}
