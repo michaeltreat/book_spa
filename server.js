@@ -15,11 +15,16 @@ client.on('error', err => console.error(err))
 
 app.use(cors())
 
-app.get('/test', (req, res) => res.send('test was a success!') )
-
-// app.get('*', (req, res) =>{
-//   res.redirect(CLIENT_URL)
-// })
+app.get('/test', (req, res) => {
+  console.log('route was hit')
+  res.send('test was a success!') 
+})
+app.get('/books', (req, res) => {
+  console.log('books was hit')
+  client.query(`
+    SELECT * FROM BOOKS;
+  `).then( data => res.send(data.rows))
+})
 
 
 
