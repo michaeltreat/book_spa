@@ -15,7 +15,10 @@ client.on('error', err => console.error(err))
 
 app.use(cors())
 
-app.all('*', (req, res) => res.redirect(`${CLIENT_URL}/index2.html`))
+app.all('*', (req, res) =>{
+  res.redirect(CLIENT_URL)
+  res.send(console.log('app.all Successful'))
+})
 
 
 
