@@ -17,9 +17,9 @@ app.use(cors())
 
 app.get('/test', (req, res) => res.send('test was a success!') )
 
-app.all('*', (req, res) =>{
-  res.redirect(CLIENT_URL)
-})
+// app.get('*', (req, res) =>{
+//   res.redirect(CLIENT_URL)
+// })
 
 
 
