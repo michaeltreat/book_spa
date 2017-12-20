@@ -15,7 +15,7 @@ client.on('error', err => console.error(err))
 
 app.use(cors())
 
-// app.get('/test', (req, res) => res.send('test was a success!') )
+app.get('/test', (req, res) => res.send('test was a success!') )
 
 // app.get('*', (req, res) =>{
 //   res.redirect(CLIENT_URL)
